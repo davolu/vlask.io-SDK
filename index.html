@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlask.io Sample Project</title>
+</head>
+<body>
+    
+    <!-- 
+
+        IMPORTANT ATTRIBUTES: 
+
+        x-room-id: is the name of your room,
+        you can make this static or dynamic. 
+        Users in the same room will be connected together. 
+        You can use any string name for your room
+
+        Api key : You can generate this from your dashboard at 
+        https://vlask.io
+
+    -->
+    <!--VLASKIO-->
+     <div id="vlask.io-div" 
+         x-room-id="myfriendsroom" 
+         x-allowscreenshare="true"
+         x-allow-annotations="true"
+         x-style-body-bgColor="#ff5757"
+         x-style-body-bgImage="https://sdk.vlask.io/assets/blu-gradient-background.jpg"
+         x-style-controls-bgColor="transparent"
+         x-style-controls-bgImage=""
+         x-style-join-text="Join the call"
+         x-style-join-color="#fff" 
+        style="height:900px; overflow-y: hidden; width:100%;">
+    </div> 
+     <script type="text/javascript" src="https://sdk.vlask.io/vlask.io.sdk.js"></script>
+     <script type="text/javascript">
+     VLASKIO.init(["SKDJKDHKuidhudihdudddkjckdjb=="]); /*API KEY */
+     VLASKIO.run();
+     </script>
+    <!--VLASKIO-->
+ 
+</body>
+</html>
